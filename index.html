@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form to create an account</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-box">
+            <h2 class="header">Login
+                <hr>
+            </h2>
+            <form action="#" method="POST" class="formControl" id="myform" onsubmit="return validateForm()">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="John Doe">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="john123@email.com">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Password">
+                <button type="submit" class="submitbtn">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
