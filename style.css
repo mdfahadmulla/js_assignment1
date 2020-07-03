@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #008080;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 100vh;
+}
+
+.form-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px 30px;
+}
+
+.header{
+    margin: 0;
+    color: black;
+    font-size: 22px;
+}
+
+.header hr{
+    color: #008080;
+}
+
+.formControl{
+    display: flex;
+    flex-direction: column;
+}
+
+.formControl label{
+    color: black;
+    margin-bottom: 5px;
+}
+
+.formControl input[type=text], input[type=email], input[type=password] {
+    font-family: inherit;
+    width: 300px;
+    padding: 15px 10px;
+    border-radius: 5px;
+    border: 2px solid #008080;
+    transition: 0.3s;
+    margin-bottom: 25px;
+}
+
+.formControl input:hover{
+    border-color: #005252;
+    box-shadow: 0px 0px 3px black;
+}
+
+.formControl input:focus{
+    outline: none;
+    box-shadow: 0px 0px 3px rgb(131, 129, 129);
+}
+
+.formControl .submitbtn{
+    font-family: inherit;
+    font-size: 18px;
+    color: #fff;
+    background-color: #008080;
+    border: 0;
+    box-shadow: 0px 0px 5px  black;
+    padding: 15px;
+    transition: 0.3s;
+}
+
+.formControl .submitbtn:hover {
+    background-color: #005252;
+    cursor: pointer;
+}
+
+.formControl .submitbtn:focus {
+    outline: none;
+}
