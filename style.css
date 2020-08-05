@@ -57,7 +57,14 @@ body{
     border-radius: 5px;
     border: 2px solid #008080;
     transition: 0.3s;
-    margin-bottom: 25px;
+    margin-bottom: 5px;
+}
+
+.formControl small {
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 20px;
+    color: red;
 }
 
 .formControl input:hover{

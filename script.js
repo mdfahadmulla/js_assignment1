@@ -1,28 +1,34 @@
 function validateForm() {
-    var nameValue = document.forms["myform"]["name"].value;
-    var emailValue = document.forms["myform"]["email"].value;
-    var passwordValue = document.forms["myform"]["password"].value;
-    var alphabets = /^[A-Za-z]+$/;
-    var email
+    var nameValue = document.getElementById('myform').name.value;
+    var emailValue = document.getElementById('myform').email.value;
+    var passwordValue = document.getElementById('myform').password.value;
 
     if (nameValue == "") {
-        alert("Name Field cannot be empty");
-        return false;
-
-    } else if (!nameValue.match(alphabets)) {
-        alert("Name cannot be numbers or symbols");
-        return false;
+        document.getElementById('nameErr').innerHTML = "Name Field cannot be empty";
+        event.preventDefault();
+    } else {
+        document.getElementById("nameErr").innerHTML = "";
     }
 
     if (emailValue == "") {
-        alert("Email Field cannot be empty");
-        return false;
-    } else if(emailValue == )
+        document.getElementById('emailErr').innerHTML = "Email Field cannot be empty";
+        event.preventDefault();
 
-    if (passwordValue == "") {
-        alert("Password Field cannot be empty");
+    } else {
+        document.getElementById("emailErr").innerHTML = "";
 
     }
 
-    return false;
+    if (passwordValue == "") {
+        document.getElementById('passErr').innerHTML = "Password Field cannot be empty";
+        event.preventDefault();
+    }
+    else if (passwordValue.length < 6 || passwordValue.length > 20) {
+        document.getElementById('passErr').innerHTML = "Password digits should be between 6 and 20";
+        event.preventDefault();
+    } else {
+        document.getElementById("passErr").innerHTML = "";
+    }
+    
+    return su
 }
