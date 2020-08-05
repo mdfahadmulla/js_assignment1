@@ -30,5 +30,4 @@ function validateForm() {
         document.getElementById("passErr").innerHTML = "";
     }
     
-    return su
 }
